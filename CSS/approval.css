@@ -1,24 +1,38 @@
+a {
+    text-decoration: none;
+}
+
 body {
     font-family: NanumGothic;
     list-style-type:none;
 }
 
-
 section {
     display: flex;
     width: 1840px;
-    height: 1080px;
+    height: auto;
+}
+.container{
+    padding: 0px 50px 50px 50px;
+    width: auto;
+    height: auto;
+}
+
+/* 왼쪽 메뉴바 */
+.leftmenu{
+    display: flex;
 }
 
 /* 왼쪽 아이콘 메뉴바 */
 .leftmenu1{
     background: #10479A;
     width: 80px;
-height: auto;
+    height: 1000px;
 }
 
 /* 왼쪽 카테고리 메뉴바*/
 .leftmenu2{
+    height: 1000px;
     border-color: #000;
     border-right-style: solid;
     border-bottom-style: solid;
@@ -27,96 +41,79 @@ height: auto;
 }
 
 .mainlogo>img{
-margin: 20px 0px 34px 26px;
-width: 205px;
-height: 36px;
+    margin: 20px 0px 34px 26px;
+    width: 205px;
+    height: 36px;
 }
 
 .maintitle{
-color: #000;
-text-align: center;
-
-font-size: 40px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-margin-bottom: 60px;
+    color: #000;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 60px;
 }
 
 .apv-navibox{
-/* display: flex; */
-width: 247px;
-height: 768px;
-padding: 12px;
-border-right : #000;
-/* justify-content: center; */
-/* align-items: center; */
-/* flex-shrink: 0; */
-box-sizing: border-box
+    width: 247px;
+    height: 768px;
+    padding: 12px;
+    border-right : #000;
+    box-sizing: border-box
 }
 
 .apv-navibox-top{
-display: flex;
-width: 197px;
-height: 50px;
-padding: 10px 12px;
-justify-content: center;
-align-items: center;
-flex-shrink: 0;
-border-radius: 6px;
-background: #FFC338;
-color: #000;
-text-align: center;
-
-font-size: 24px;
-font-style: normal;
-font-weight: 400;
-line-height: 130%;
+    display: flex;
+    width: 197px;
+    height: 50px;
+    padding: 10px 12px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 6px;
+    background: #FFC338;
+    color: #000;
+    text-align: center;
+    font-size: 24px;
 }
 
 .apv-navibox-ul li:hover{
     background-color: #EEE;
     font-weight: 600;
-    
 }
 
 .apv-navibox-maintitle{
-display: flex;
-width: 197px;
-height: 34px;
-padding: 10px 12px;
-justify-content: center;
-align-items: center;
-/* flex-shrink: 0; */
-border-radius: 6px;
-background: #10479A;
-color: #FFF;
-text-align: center;
-
-font-size: 20px;
-font-style: normal;
-font-weight: 400;
-/* line-height: 130%; */
+    display: flex;
+    width: 197px;
+    height: 34px;
+    padding: 10px 12px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    background: #10479A;
+    color: #FFF;
+    text-align: center;
+    font-size: 20px;
 }
 
 .apv-navibox-emp{
-height: 10px;
+    height: 10px;
 }
 .apv-navibox-ul{
     padding: 0;
 }
 .apv-navibox-ul>li{
-display: flex;
-width: 197px;
-height: 26px;
-padding: 10px 12px;
-justify-content: center;
-align-items: center;
-/* flex-shrink: 0; */
+    display: flex;
+    width: 197px;
+    height: 26px;
+    padding: 10px 12px;
+    justify-content: center;
+    align-items: center;
 }
 
 
+
 /* 전자결재 메인 */
+
 .apv-mainbox{
     display:inline-flex;
 }
@@ -125,7 +122,6 @@ align-items: center;
     display: flex;
     border-collapse: collapse;
     margin: 30px;
-    /* padding: 10px 12px; */
     justify-content: center;
     border: #10479A solid 4px;
     width: 400px;
@@ -135,18 +131,18 @@ align-items: center;
 .apv-maintoday th{
     background: #FFC338;
     width: 400px;
-height: 44px;
+    height: 44px;
     color: #10479A;
     border-bottom: #10479A solid 4px;
-text-align: center;
-font-size: 24px;
+    text-align: center;
+    font-size: 24px;
 }
 
 .apv-maintoday td{
     width: 200px;
-height: 53px;
-text-align: center;
-font-size: 24px;
+    height: 53px;
+    text-align: center;
+    font-size: 24px;
 }
 
 .apv-maintoday-1{
@@ -172,13 +168,12 @@ font-size: 24px;
     flex-direction: column;
     margin: 30px 10px;
     border-radius: 6px;
-border: 4px solid #10479A ;
-/* background: #EEE; */
-width: 200px;
-height: 140px;
-padding: 10px 12px;
-justify-content: center;
-align-items: flex-start;
+    border: 4px solid #10479A ;
+    width: 200px;
+    height: 140px;
+    padding: 10px 12px;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 .apv-mainbox1-right.apv-mainbox1-right .row1{
@@ -212,21 +207,20 @@ align-items: flex-start;
 }
 
 .apv-mainlist-l-title{
-display: flex;
-width: 300px;
-height: 50px;
-padding: 10px 12px;
-margin-bottom: 30px;
-text-align:center;
-justify-content: center;
-align-items: center;
-border-radius: 6px;
-border: 4px solid #10479A ;
-background: #10479A;
-color: #FFF;
-font-size: 24px;
-font-weight: 600;
-/* margin-bottom: 40px; */
+    display: flex;
+    width: 300px;
+    height: 50px;
+    padding: 10px 12px;
+    margin-bottom: 30px;
+    text-align:center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    border: 4px solid #10479A ;
+    background: #10479A;
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 600;
 }
 
 .apv-mainlist-rm-list{
@@ -234,16 +228,16 @@ font-weight: 600;
 }
 
 .apv-mainlist-mylist>div {
-flex-direction: column;
-display: flex;
-width: 300px;
-height: 50px;
-padding: 10px 12px;
-justify-content: center;
-align-items: center;
-text-align: center;
-border: 1px solid #7B7B7B;    
-list-style-type:none;
+    flex-direction: column;
+    display: flex;
+    width: 300px;
+    height: 50px;
+    padding: 10px 12px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #7B7B7B;    
+    list-style-type:none;
 }
 
 .apv-mainlist-r-title{
@@ -312,11 +306,11 @@ list-style-type:none;
 
 .apv-topmenu{
     display: flex;
-width: 1520px;
-height: 50px;
-padding: 10px 12px;
-justify-content: center;
-align-items: center;
+    width: 1520px;
+    height: 50px;
+    padding: 10px 12px;
+    justify-content: center;
+    align-items: center;
 
 }
 
@@ -332,12 +326,11 @@ align-items: center;
     /* border-radius: 6px; */
     background: #10479A;
     color: #FFF;
-text-align: center;
-
-font-size: 24px;
-font-style: normal;
-justify-content: center;
-align-items: center;
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    justify-content: center;
+    align-items: center;
 }
 
 .apv-topmenu-ul li:hover{
@@ -359,12 +352,11 @@ align-items: center;
     /* border-radius: 6px; */
     background: #10479A;
     color: #FFF;
-text-align: center;
-
-font-size: 24px;
-font-style: normal;
-justify-content: center;
-align-items: center;
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    justify-content: center;
+    align-items: center;
 }
 
 .apv-topmenu-r-ul li:hover{
@@ -381,14 +373,11 @@ align-items: center;
     height: 820px;
     border: #7B7B7B solid 1px;
     text-align: center;
-
-font-size: 24px;
+    font-size: 24px;
 }
 
 .apv-boxresult-table th{
     height: 40px;
-    /* flex-direction: column; */
-    /* justify-content: center; */
     background-color: #EEE;
     border: #7B7B7B solid 1px;
 }
@@ -434,7 +423,6 @@ font-size: 24px;
     position: relative;
     justify-content: center;
     align-items: center;
-    
 }
 
 .paging>span{
@@ -443,13 +431,12 @@ font-size: 24px;
     color: #FFF;
     background: #10479A;
     text-align: center;
-
-font-size: 24px;
-text-align: center;
-font-size: 20px;
-justify-content: center;
-align-items: center;
-display: flex;
+    font-size: 24px;
+    text-align: center;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
 .paging>span:hover{
@@ -460,12 +447,212 @@ display: flex;
 
 
 
+/* 결재 공용*/
+/* 결재 상단바*/
+.apv-topbar{
+    display: flex;
+    width: auto;
+    height: 55px;
+    background: #EEEEEE;
+    align-items: center;
+}
+
+.apv-topbar>div{
+    margin-left: 50px;
+}
+
+.apv-topbar>div>button{
+    height: 40px;
+    margin-right: 20px;
+    padding: 0px 12px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 0.5px solid #7B7B7B;
+}
+
+.apv-topbar>div>button.summit{
+    background: #FFC338;
+    
+}
+
+/* 문서 타이틀 */
+.apv-apvtitle{
+    display: flex;
+    color: #000;
+    text-align: center;
+    font-size: 54px;
+    display: flex;
+    width: 1500px;
+    height: 64px;
+    padding: 10px 12px;
+    margin-bottom: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 결재라인 */
+.apv-apvline{
+    float: right;
+    margin-right: 20px;
+    width: 600px;
+    height: 175px;
+    /* border: 1px solid #7B7B7B; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.apv-apvlinebox{
+    width: 150px;
+    text-align:center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.apv-apvlinebox .row1 {
+    display: flex;
+    height: 30px;
+    background: #EEEEEE;
+    border: 1px solid #7B7B7B;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.apv-apvlinebox .row2 {
+    display: flex;
+    height: 115px;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    border-right: 1px solid #7B7B7B;
+    border-left: 1px solid #7B7B7B;
+}
+.apv-apvlinebox .row3{
+    display: flex;
+    height: 30px;
+    background: #EEEEEE;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid #7B7B7B;
+}
+
+.apv-apvlinebox .row4, .row7, .row10 {
+    display: flex;
+    height: 30px;
+    background: #EEEEEE;
+    border-top: 1px solid #7B7B7B;
+    border-right: 1px solid #7B7B7B;
+    border-bottom: 1px solid #7B7B7B;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.apv-apvlinebox .row5, .row8, .row11{
+    display: flex;
+    height: 115px;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    border-right: 1px solid #7B7B7B;
+}
+.apv-apvlinebox .row6, .row9, .row12{
+    display: flex;
+    height: 30px;
+    background: #EEEEEE;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    border-top: 1px solid #7B7B7B;
+    border-right: 1px solid #7B7B7B;
+    border-bottom: 1px solid #7B7B7B;
+}
+
+/* 공용 완료 */
+
+.apv-content{
+    width: 1500px;
+    display: inline-grid;
+    margin-top: 40px;
+    border: 1px solid #7B7B7B;
+
+}
+
+.apv-content-title{
+display: inline-flex;
+border-bottom: 1px solid #7B7B7B;
+}
+
+.apv-content-title .column1{
+    width: 356px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+align-items: center;
+border-right: 1px solid #7B7B7B;
+background: #EEE;
+text-align: center;
+font-size: 24px;
+}
+
+.apv-content-title .column2{
+    width: auto;
+    height: 60px;
+    display: flex;
+    padding-left: 20px;
+    flex-direction: column;
+    justify-content: center;
+align-items: center;
+text-align: left;
+font-size: 18px;
+}
+
+.apv-content-detail{
+    height: 40px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+align-items: center;
+    text-align: center;
+    border-bottom: 1px solid #7B7B7B;
+background: #EEE;
+}
+
+.apv-content-detail-coment{
+    height: auto;
+    min-height: 180px;
+    padding: 40px;
+    border-bottom: 1px solid #7B7B7B;
+}
+
+.apv-content-detail2{
+    height: 40px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+align-items: center;
+    text-align: center;
+    border-bottom: 1px solid #7B7B7B;
+}
+
+.apv-content-detail-coment2{
+    height: auto;
+    min-height: 900px;
+    padding: 40px;
+}
+
+
+
 
 
 
 footer{
     margin: 50px;
-    
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
