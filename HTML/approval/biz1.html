@@ -6,46 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>기안서</title>
+    <link rel="stylesheet" href="/CSS/approval/approval.css">
     <link rel="stylesheet" href="/CSS/approval/approval-biz.css">
-
+    <script src="/src/static/include.js"></script>
+	<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
 </head>
+
 <body>
-    <section>
-		<div class="leftmenu">
-			<div class="leftmenu1"></div>
-			<div class="leftmenu2">
-				<div class="mainlogo">
-					<img src="/img/HIGH CARE.png">
-				</div>
-				<div class="maintitle">전자결재</div>
-				<div class="apv-navibox">
-					<div class="apv-navibox-top">작성하기</div>
-					<div class="apv-navibox-emp"></div>
-					<div class="apv-navibox-maintitle">
-						<a href="/HTML/approval/writebox.html">결재함</a>
-					</div>
-					<ul class="apv-navibox-ul">   
-						<li>결재 예정</li>
-						<li>결재 진행중</li>
-						<li>결재 완료</li>
-						<li>결재 반려</li>
-						<li>결재 참조</li>
-					</ul>
-					<div class="apv-navibox-emp"></div>
-					<div class="apv-navibox-maintitle">
-						<a href="/HTML/approval/receivebox.html">수신함</a></div>
-					<div class="apv-navibox-emp"></div>
-					<div class="apv-navibox-maintitle">MY 결재 양식</div>
-					<ul class="apv-navibox-ul">    
-						<li>연차신청서</li>
-						<li><a href="/HTML/approval/exp1.html">지출결의서(단건)</a></li>
-                        <li>공문</li>
-						<li>업무보고서<div>
-						<li><a href="/HTML/approval/biz1.html">기안서</a></li>
-					</ul>-
-				</div>
-			</div>
-		</div>
+	<section>
+		<div data-include-html="./apv-menu.html" class="include"></div>
 		<div>
 			<div class="apv-topbar">
 			<div>
@@ -93,14 +62,6 @@
 			</div>
 		</div>									
     </section>
-    <footer>
-        <span id="footer1">
-            서울 종로구 인사동길 12 대일빌딩, 하이케어 | Tel. 02-1234-5678 Fax.02-1234-8282 | 고유번호 100-01-12345
-        </span><br>
-        <span id="footer2">
-            개인정보 관리 책임 : 황다혜 부장 | 문의 : hdhye89@gmail.com | 이용약관 | Copyrightⓒ2023 by HIGH CARE GROUP All Rights Reserved.
-        </span>
-    </footer>
-    <!-- <div data-include-html="./footer.html" class="include"></div> -->
+    <div data-include-html="../footer.html" class="include"></div>
 </body>
 </html>
