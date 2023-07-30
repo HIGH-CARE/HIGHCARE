@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>연차신청서</title>
+    <title>사직서</title>
     <link rel="stylesheet" href="/CSS/approval/approval.css">
     <link rel="stylesheet" href="/CSS/approval/approval-hrm.css">
 	<script src="/src/static/include.js"></script>
@@ -16,15 +16,23 @@
 	<section>
 		<div data-include-html="./apv-menu.html" class="include"></div>
 		<div>
-			<div data-include-html="./apv-summitbar.html" class="include"></div>
+			<div class="apv-topbar">
+			<div>
+				<button class="summit">제출</button>
+				<button>파일첨부</button>
+			</div>
+		</div>
 			<div class="container">
-				<div class="apv-apvtitle">연차신청서</div>
-				<div data-include-html="./apv-summitline.html" class="include"></div>			
-
+				<div class="apv-apvtitle">사직서</div>
+				<div data-include-html="./apv-summitline.html" class="include"></div>
 				<div class="apv-content">
 					<div class="apv-content-hrm1">
 						<div class="column1">휴가 종류</div>
-						<div class="column2">연차</div>
+						<select class="column2" name="etcofftype">휴가 종류
+							<option>경조휴가</option>
+							<option>포상휴가</option>
+							<option>대체휴가</option>
+						</select>
 					</div>
 										
 					<div class="apv-content-hrm1">

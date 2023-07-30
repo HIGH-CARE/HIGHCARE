@@ -10,7 +10,7 @@ body {
 section {
     display: flex;
     width: 1840px;
-    height: auto;
+
 }
 .container{
     padding: 0px 50px 50px 50px;
@@ -317,7 +317,6 @@ section {
 
 .apv-topbar>div>button.summit{
     background: #FFC338;
-    
 }
 
 /* 문서 타이틀 */
@@ -426,6 +425,29 @@ section {
     border: #7B7B7B solid 1px;
     font-size: 24px;
 } 
+
+
+
+textarea {
+    font-family: NanumGothic;
+    /* padding: 30px; */
+    font-size: 24px;
+    width: 94%;
+    height: auto;
+    border: none;
+    outline: none;
+    resize: none;
+    overflow: hidden;
+}
+.input1{
+    font-family: NanumGothic;
+    font-size: 24px;
+    border: none;
+    outline: none;
+    resize: none;
+    padding-left: 30px;
+}
+
 
 
 footer{

@@ -147,6 +147,7 @@
     text-align: center;
     justify-content: space-around;
     border-top: 1px solid #7B7B7B;
+    /* border-bottom: 1px solid #7B7B7B; */
 }
 .apv-content-title-exp1-3 > div{
     display: flex;
@@ -159,6 +160,18 @@
     border-right: none;
 }
 
+.apv-content-detail2{
+    grid-column: 1 / span 8;
+    display: flex;
+    height: 40px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-top: 3px solid #7B7B7B;
+    background: #EEE;
+    font-weight: 600;
+}
 
 
 /* 업무 결재 */
