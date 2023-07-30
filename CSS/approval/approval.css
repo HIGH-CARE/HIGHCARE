@@ -125,7 +125,7 @@ section {
     justify-content: center;
     border: #10479A solid 4px;
     width: 400px;
-    height: 160px;
+    height: auto;
 }
 
 .apv-maintoday th{
@@ -144,9 +144,8 @@ section {
     text-align: center;
     font-size: 24px;
 }
-
-.apv-maintoday-1{
-    border-right: #10479A solid 4px
+.apv-maintoday .today1{
+    border-right: #10479A solid 4px;
 }
 
 .apv-mainbox1{
@@ -237,7 +236,11 @@ section {
     align-items: center;
     text-align: center;
     border: 1px solid #7B7B7B;    
+    border-bottom: none;    
     list-style-type:none;
+}
+.apv-mainlist-mylist > div:last-child {
+    border-bottom: 1px solid #7B7B7B;    
 }
 
 .apv-mainlist-r-title{
@@ -280,7 +283,7 @@ section {
 
 }
 
-.apv-mainlist-r-list>div {
+.apv-mainlist-r-list > div {
     flex-direction: column;
     display: flex;
     width: 300px;
@@ -289,8 +292,13 @@ section {
     justify-content: center;
     align-items: center;
     text-align: center;
-    border: 1px solid #7B7B7B;    
+    border: 1px solid #7B7B7B;
+    border-bottom: none;   
     list-style-type:none;
+    }
+
+.apv-mainlist-r-list > div:last-child {
+    border-bottom: 1px solid #7B7B7B;
     }
 
     /* 결재 상단바*/
