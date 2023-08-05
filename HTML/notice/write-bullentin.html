@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>게시판</title>
+    <link rel="stylesheet" href="/CSS/approval/approval.css">
+    <link rel="stylesheet" href="/CSS/bullentin/bullentin.css">
+    <script src="/src/static/include.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.css" rel="stylesheet">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.js"></script>
+        <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.8/summernote.css" rel="stylesheet">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.8/summernote.js"></script>
+</head>
+<section style="width: 100vw; display: flex;">
+    <div data-include-html="./bulletin-menu.html" class="include"></div>
+    <div class="content-bullentin-main">
+        <h1 class="content-title" >글쓰기</h1>
+      
+    <div>
+        게시판 선택
+        <select></select>
+    </div>
+    <div>
+        제목        
+        <input type="text">
+    </div>
+    <div id="summernote"></div>
+</div>
+</section>      
+
+<div data-include-html="../footer.html" class="include"></div>
+<script>
+    $(document).ready(function () {
+        $('#summernote').summernote({
+          'width': 1000,
+          'height' : 540
+            
+          
+        });
+    });
+</script>
+</script>
+</body>
+</html>
