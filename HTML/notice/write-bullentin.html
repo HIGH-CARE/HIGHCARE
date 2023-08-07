@@ -13,37 +13,47 @@
     <link href="http://netdna.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.css" rel="stylesheet">
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.js"></script>
-        <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.8/summernote.css" rel="stylesheet">
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.8/summernote.css" rel="stylesheet">
     <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.8/summernote.js"></script>
 </head>
 <section style="width: 100vw; display: flex;">
     <div data-include-html="./bulletin-menu.html" class="include"></div>
     <div class="content-bullentin-main">
-        <h1 class="content-title" >글쓰기</h1>
-      
-    <div>
-        게시판 선택
-        <select></select>
+        <h1 class="content-title">글쓰기</h1>
+        <div class="bullentin-main">
+            <div>
+                게시판 선택
+                <select></select>
+            </div>
+            <div style="width: 96%;">
+                <span >제목</span>
+                <input type="text" style="width: 100%;">
+            </div>
+            <div id="summernote"></div>
+            <div>
+                <span>댓글허용</span>
+                <input type="radio" name="write-comment" value="ok">예
+                <input type="radio" name="write-comment" value="no">아니오
+            </div>
+            <button>수정</button>
+            <button>삭제</button>
+            <button>등록</button>
+        </div>
     </div>
-    <div>
-        제목        
-        <input type="text">
-    </div>
-    <div id="summernote"></div>
-</div>
-</section>      
+</section>
 
 <div data-include-html="../footer.html" class="include"></div>
 <script>
     $(document).ready(function () {
         $('#summernote').summernote({
-          'width': 1000,
-          'height' : 540
-            
-          
+            'width': '96%',
+            'height': 540
+
+
         });
     });
 </script>
 </script>
 </body>
+
 </html>
