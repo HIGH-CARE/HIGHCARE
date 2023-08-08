@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공문</title>
+    <link rel="stylesheet" href="/CSS/approval/approval.css">
+    <link rel="stylesheet" href="/CSS/approval/approval-biz.css">
+    <script src="/src/static/include.js"></script>
+	<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+</head>
+
+<body>
+	<section>
+		<div data-include-html="./apv-menu.html" class="include"></div>
+		<div>
+			<div data-include-html="./apv-summitbar.html" class="include"></div>
+			<div class="container">
+				<div class="apv-apvtitle">공문</div>
+				<div data-include-html="./apv-summitline.html" class="include"></div>
+				<div><a href="./biz4-official.html">미리보기</a></div>
+
+				<div class="apv-content">
+					<div class="apv-content-title">
+						<div class="column1">제목</div>
+						<div class="column2"><input class="input1" placeholder="제목 입력"></div>
+					</div>
+					<div class="apv-content-title">
+						<div class="column1">수신처</div>
+						<div class="column2"><input class="input1" placeholder="수신처 입력"></div>
+					</div>
+					<div class="apv-content-detail">상세내용</div>
+					<div class="apv-content-detail-coment">
+						<textarea placeholder="내용 작성" rows="9"></textarea>
+					</div>
+					<div class="apv-content-detail2">-아래-</div>
+					<div class="apv-content-detail-coment2">어쩌고저쩌고</div>
+				</div>
+			</div>
+		</div>									
+    </section>
+    <div data-include-html="../footer.html" class="include"></div>
+</body>
+</html>
