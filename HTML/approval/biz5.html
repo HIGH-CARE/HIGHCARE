@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>custom</title>
+    <link rel="stylesheet" href="/CSS/approval/approval.css">
+    <link rel="stylesheet" href="/CSS/approval/approval-biz.css">
+    <script src="/src/static/include.js"></script>
+	<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+</head>
+
+<body>
+	<section>
+		<div data-include-html="./apv-menu.html" class="include"></div>
+		<div>
+			<div data-include-html="./apv-summitbar.html" class="include"></div>
+			<div class="container">
+				<div><input class="apv-apvtitle-custom" placeholder="양식 제목"></div>
+				<div data-include-html="./apv-summitline.html" class="include"></div>
+
+				<div class="apv-content">
+					<div class="apv-content-title">
+						<div class="column1">제목</div>
+						<div><input class="column2" placeholder="제목 입력"></div>
+					</div>
+					<div class="apv-content-detail">상세내용
+					</div>
+					<div class="apv-content-detail-coment2">  sodyd</div>
+				</div>
+			</div>
+		</div>									
+    </section>
+    <div data-include-html="../footer.html" class="include"></div>
+</body>
+</html>
