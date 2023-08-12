@@ -21,29 +21,31 @@
 				<div class="apv-apvtitle">기타휴가신청서</div>
 				<div data-include-html="./apv-summitline.html" class="include"></div>
 				<div class="apv-content">
-					<div class="apv-content-hrm1">
+					<div class="apv-content-hrm2">
 						<div class="column1">휴가 종류</div>
-						<select class="column2" name="etcofftype">휴가 종류
+						<select class="input1" name="etcofftype">휴가 종류
+							<option>종류</option>
 							<option>경조휴가</option>
 							<option>포상휴가</option>
 							<option>대체휴가</option>
+							<option>포상휴가</option>
 						</select>
-					</div>
-										
-					<div class="apv-content-hrm1">
-						<div class="column1">반차 여부</div>
-						<div class="column2">
-							<label><input type="radio" name="offtype">오전 반차</label>
-							<label><input type="radio" name="offtype">오후 반차</label>
-						</div>
-					</div>
-					<div class="apv-content-hrm1">
-						<div class="column1">시작일자</div>
-						<div class="column2"><input type="date"></div>
 					</div>
 					<div class="apv-content-hrm1">
 						<div class="column1">종료일자</div>
-						<div class="column2"><input type="date"></div>
+						<div class="column2"><input type="date" class="input2">
+						<label><input type="radio" name="offtype">오전</label>
+						<label><input type="radio" name="offtype">오후</label>
+						<label>(미선택 시 전일)</label>
+						</div>
+					</div>
+					<div class="apv-content-hrm1">
+						<div class="column1">종료일자</div>
+						<div class="column2"><input type="date" class="input2">
+						<label><input type="radio" name="offtype">오전</label>
+						<label><input type="radio" name="offtype">오후</label>
+						<label>(미선택 시 전일)</label>
+						</div>
 					</div>
 					<div class="apv-content-hrm1">
 						<div class="column1">기간</div>
