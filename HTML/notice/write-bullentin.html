@@ -21,23 +21,28 @@
     <div class="content-bullentin-main">
         <h1 class="content-title">글쓰기</h1>
         <div class="bullentin-main">
-            <div>
-                게시판 선택
+            <div class="bullentin-category">
+                <span>
+                    게시판 선택
+                </span>
                 <select></select>
             </div>
-            <div style="width: 96%;">
-                <span >제목</span>
-                <input type="text" style="width: 100%;">
+            <div style="width: 96%;" class="write-title">
+                <span>제목</span>
+                <input type="text" style="width: 70%;">
             </div>
             <div id="summernote"></div>
-            <div>
+            <div class="permit">
                 <span>댓글허용</span>
                 <input type="radio" name="write-comment" value="ok">예
                 <input type="radio" name="write-comment" value="no">아니오
             </div>
-            <button>수정</button>
-            <button>삭제</button>
-            <button>등록</button>
+            <div class="registration">
+                <button>수정</button>
+                <button>삭제</button>
+                <button>등록</button>
+                <button>취소</button>
+            </div>
         </div>
     </div>
 </section>
@@ -47,7 +52,7 @@
     $(document).ready(function () {
         $('#summernote').summernote({
             'width': '96%',
-            'height': 540
+            'height': 700
 
 
         });
