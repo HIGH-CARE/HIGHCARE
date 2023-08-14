@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>사원 조회</title>
-    <link rel="stylesheet" href="/CSS/approval.css">
+    <title> 근태 현황 </title>
+    <link rel="stylesheet" href="/CSS/approval/approval.css">
     <link rel="stylesheet" href="/CSS/member.css">
 
 </head>
@@ -33,62 +33,46 @@
             </div>
         </div> 
         <div>
-            <div class="apv-title">사원 조회</div>
-            <!-- <div class="pm-topmenu"></div> -->
-            <div>
-                <table class="pm-boxresult-table">
+            <div class="pm-de-top">
+                <div class="pm-div-font">근태 관리
+                    <input class="pm-department-search" type="text" name="name" placeholder="사원이름을 입력하세요.">
+                    <button class="pm-department-button">검색</button>
+                </div>
+                
+
+                <table class="pm-job-table">
+                    <div class="pm-workbox">
+                        <div class="pm-workin-box">
+                            <input type="button" value="출근" class="pm-work-button"></input>
+                            <button class="pm-work-button">퇴근</button>
+                            <button class="pm-work-button">자리 비움</button>
+                        </div>
+                        <div class="pm-workin-box">
+                            <h2>누적 근무시간</h2>
+                            <h2>00:00:00</h2>
+                        </div>
+                        <div class="pm-workin-box2">
+                            <h2>출근시간</h2>
+                            <h2>00:00:00</h2>
+                        </div>
+                        <div class="pm-workin-box-last">
+                            <h2>퇴근시간</h2>
+                            <h2>00:00:00</h2>
+                        </div>
+
+                    </div>
                     <tr>
-                        <th class="pm-column1">사원명</th>
-                        <th class="pm-column2">직급</th>
-                        <th class="pm-column2">휴대폰</th>
-                        <th class="pm-column2">부서</th>
-                        <th class="pm-column2">내선전화</th>
-                        <th class="pm-column2">메모</th>
+                        <th class="columnpm1">사원명</th>
+                        <th class="columnpm2">날짜</th>
+                        <th class="columnpm0">부서명</th>
+                        <th class="columnpm0">직급 </th>
+                        <th class="columnpm0">출근시간 </th>
+                        <th class="columnpm0">퇴근시간</th>
+                        <th class="columnpm0">이메일</th>
+                        <th class="columnpm0">비고</th>
                     </tr>
                     <tr>
                         <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>주민등록번호</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>전화번호</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>생년월일</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>주소</td>
-                        <td></td>
-                    </tr>
-                    <!-- <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
                         <td></td>
                         <td></td>
                         <td></td>
@@ -105,26 +89,10 @@
                         <td></td>
                         <td></td>
                         <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
                         <td></td>
                     </tr>
                     <tr>
                         <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
                         <td></td>
                         <td></td>
                         <td></td>
@@ -141,14 +109,6 @@
                         <td></td>
                         <td></td>
                         <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
                         <td></td>
                     </tr>
                     <tr>
@@ -159,16 +119,98 @@
                         <td></td>
                         <td></td>
                         <td></td>
-                    </tr> -->
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </div>
 
                 </table>
-                <div class="paging">
+
+
+            </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <!-- <div class="paging">
                     <span>1</span>
                     <span>2</span>
                     <span>3</span>
                     <span>4</span>
                     <span>5</span>
-                </div>
+                </div> -->
             </div>
         </div>
         
