@@ -22,7 +22,7 @@
         <div data-include-html="./reservation-menu.html" class="include"></div>
         <div class="content-bullentin-main">
             <h1 class="content-title">자원추가</h1>
-            <div style="display: flex;">
+            <div class="add-content">
                 <div>
                     <span>자원그룹</span>
                     <select name="" id="">
@@ -35,39 +35,42 @@
                         <option value="">서울</option>
                     </select>
                 </div>
-            </div>
-            <div>
-                <span>자원이름</span>
-                <input type="text">
-            </div>
 
-            <div>
-                <span>위치</span>
-                <input type="text">
+                <div>
+                    <span>자원이름</span>
+                    <input type="text">
+                </div>
+
+                <div>
+                    <span>위치</span>
+                    <input type="text">
+                </div>
+                <div>
+                    <span>사용시간</span>
+                    <input type="text">
+                    ~
+                    <input type="text">
+                </div>
+                <div>
+                    <span>대표이미지</span>
+                    <input type="file">
+                </div>
+                <span>이용안내</span>
+                <div id="summernote"></div>
+                <div class="button-list">
+                <button>등록</button>
+                <button>취소</button>
+                </div>
             </div>
-            <div>
-                <span>사용시간</span>
-                <input type="text">
-                ~
-                <input type="text">
-            </div>
-            <div>
-                <span>대표이미지</span>
-                <input type="file">
-            </div>
-            이용안내
-            <div id="summernote"></div>
-            <button>등록</button>
-            <button>취소</button>
         </div>
-        
+
     </section>
     <div data-include-html="../footer.html" class="include"></div>
     <script>
         $(document).ready(function () {
             $('#summernote').summernote({
                 'width': '96%',
-                'height': 540
+                'height': 350
 
 
             });

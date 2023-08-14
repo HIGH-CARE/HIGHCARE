@@ -67,9 +67,10 @@
   margin-right: 20px;
 }
 .content-title{
-    padding-left: 10px;
+    padding-left: 20px;
     padding-bottom: 10px;
-    border-bottom: 1px solid #000;
+    margin-top: 70px;
+    /* border-bottom: 1px solid #000; */
 }
 table{
     width: 100%;
@@ -151,3 +152,82 @@ td{
   .bullentin-main{
     padding-left: 10px;
   }
+
+  .step{
+    display: flex;
+    justify-content: center;
+    margin-left: 5px;
+    margin-top: 50px;
+  }
+  .step div{
+    text-align: center;
+  }
+  .step div h3{
+    
+    border: 1px solid #000;
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    padding-top: 25px;
+    margin-bottom: 0px;
+  }
+  .step-1-content,.step-2-content,#step-3-content{
+    min-height: 400px;
+    min-width: 300xpx;
+    border: 1px solid #000;
+  }
+  .step-3{
+    min-width: 400px;
+  }
+  .step-3 h3{
+    min-width: 400px;
+  }
+li{
+  list-style-type: none;
+  text-align: center;
+  margin-bottom: 10px;
+}
+ul{
+  padding: 0;
+}
+#step-3-content div{
+  text-align: left;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+#step-3-content img{
+  margin-top: 20px;
+}
+
+.add-content{
+  margin-left: 20px;
+}
+.add-content div{
+  margin-bottom: 10px;
+}
+.add-content div span{
+  display:inline-block;
+  width: 200px;
+  font-size: 16px;
+}
+.add-content span{
+  font-size: 16px;
+}
+.button-list{
+  float:right;
+  margin-right: 50px;
+}
+
+.apply-content{
+  display: flex;
+  
+}
+.applay-main{
+  margin-left: 20px;
+}
+.applay-main img{
+  margin-right: 50px;
+}
+.applay-main div div{
+  margin-bottom: 10px;
+}
