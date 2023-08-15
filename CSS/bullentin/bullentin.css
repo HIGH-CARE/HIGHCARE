@@ -220,6 +220,7 @@ ul{
 
 .apply-content{
   display: flex;
+  margin-bottom: 10px;
   
 }
 .applay-main{
@@ -230,4 +231,22 @@ ul{
 }
 .applay-main div div{
   margin-bottom: 10px;
+}
+
+#reservation-status{
+  border: 1px solid #000;
+  width: 30%;
+  margin: 70px;
+  height: 300px;
+  margin-top: 200px;
+  
+  text-align: center;
+}
+#reservation-status h3{
+  border-bottom: 1px solid #000;
+  padding-bottom: 20px;
+  
+}
+#reservation-status button{
+  margin-top: 20px;
 }
